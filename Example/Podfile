@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'BZLib_Example', :exclusive => true do
+  pod "BZLib", :path => "../"
+end
+
+target 'BZLib_Tests', :exclusive => true do
+  pod "BZLib", :path => "../"
+
+  pod 'Kiwi'
+end
